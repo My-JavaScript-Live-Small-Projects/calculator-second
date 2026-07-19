@@ -22,9 +22,15 @@ function division(){
     input.value += '/'
 }
 function operation(){
-    let output = eval(input.value)
+    if(!input.value){
+        
+        return
+    }
+    else{
+        let output = eval(input.value)
     // console.log(output)
     input.value = output
+    }
 }
 //nine 
 function nine(){
